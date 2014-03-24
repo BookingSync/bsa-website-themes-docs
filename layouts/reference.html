@@ -1,0 +1,35 @@
+<%= render 'head' %>
+  <div class="row">
+    <div class="col-md-3 col-md-push-9">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Overview</h3>
+        </div>
+        <div class="list-group">
+          <%= link_to_with_current("Introduction", "/reference/", class: "list-group-item") %>
+          <%= link_to_with_current("Changelog", "/reference/changelog/", class: "list-group-item") %>
+          <%= link_to_with_current("Requirements", "/reference/requirements/", class: "list-group-item") %>
+        </div>
+        <div class="panel-heading">
+          <h3 class="panel-title">Details</h3>
+        </div>
+        <div class="list-group">
+          <%= link_to_with_current("Liquid markup", "/reference/details/liquid_markup/", class: "list-group-item") %>
+          <%= link_to_with_current("Templates", "/reference/details/templates/", class: "list-group-item") %>
+          <%= link_to_with_current("Snippets", "/reference/details/snippets/", class: "list-group-item") %>
+          <%= link_to_with_current("Filters", "/reference/details/filters/", class: "list-group-item") %>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 col-md-pull-3">
+      <div class="alert alert-warning">
+        We're still in the process of building the themes engine. If you notice any
+        problems, please contact <a href="mailto:support@bookingsync.com">support</a>.
+      </div>
+
+      <div id="content">
+        <%= yield %>
+      </div>
+    </div>
+  </div>
+<%= render 'foot' %>
