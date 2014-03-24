@@ -1,4 +1,4 @@
-# BookingSync Themes Docs
+# BookingSync API Docs
 
 ## Installation
 
