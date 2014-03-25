@@ -38,7 +38,7 @@ Render Site description
 Render Site global defined e-mail
 
 ~~~django
-{{ site.name }}
+{{ site.email }}
 ~~~
 
 ## `twitter` variable
