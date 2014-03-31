@@ -2,21 +2,7 @@
 1. TOC
 {:toc}
 
-## Overview
-
-Filters are used to manipulate output from tags. Filter operator is `|` and using that filters can be chained like:
-
-~~~django
-{{ rental.name | strip_html | truncate: 40 }}
-~~~
-
-Above example will remove HTML tags in input `rental.name` string and will truncate result to 40 characters. 
-
-## Liquid filters
-
-Default Liquid filters
-
-### escape(input)
+## escape(input)
 
 Escape string:
 
@@ -24,7 +10,7 @@ Escape string:
 {{ rental.description | escape }}
 ~~~
 
-### append(input)
+## append(input)
 
 Append substring to a source string
 
@@ -38,7 +24,7 @@ Output:
 main.css
 ~~~
 
-### prepend(input)
+## prepend(input)
 
 Prepend substring to a source string
 
@@ -52,7 +38,7 @@ Output:
 main.jpg
 ~~~
 
-### size(input)
+## size(input)
 
 Calculate size of variable
 
@@ -66,7 +52,7 @@ Output:
 25
 ~~~
 
-### join(input, operator='')
+## join(input, operator='')
 
 Join array elements into string
 
@@ -80,7 +66,7 @@ Output:
 Bahamas, Bali, Hawaii
 ~~~
 
-### downcase(input)
+## downcase(input)
 
 ~~~django
 {{ 'BAHAMAS' | downcase }}
@@ -92,7 +78,7 @@ Output:
 bahamas
 ~~~
 
-### upcase(input)
+## upcase(input)
 
 ~~~django
 {{ 'bahamas' | upcase }}
@@ -104,7 +90,7 @@ Output:
 BAHAMAS
 ~~~
 
-### strip_html
+## strip_html
 
 Strip HTML tags in string
 
@@ -118,7 +104,7 @@ Output:
 Jamaica is the best
 ~~~
 
-### strip_newlines
+## strip_newlines
 
 Strip all `\n` in a string
 
@@ -132,7 +118,7 @@ Output:
 I like Cuba
 ~~~
 
-### truncate(input, characters=100)
+## truncate(input, characters=100)
 
 Truncate a string down to N characters. 
 
@@ -146,7 +132,7 @@ Output:
 Very long
 ~~~
 
-### truncatewords(input, words=15)
+## truncatewords(input, words=15)
 
 Truncate a string down to N words. 
 
@@ -160,7 +146,7 @@ Output:
 A lot of words
 ~~~
 
-### date(input, format)
+## date(input, format)
 
 Format a date
 
@@ -199,7 +185,7 @@ Possible format options are:
 * `%Z` - Time zone name
 * `%%` - Literal "%" character
 
-### first(array)
+## first(array)
 
 Get first element of array
 
@@ -213,7 +199,7 @@ Output:
 bahamas
 ~~~
 
-### last(array)
+## last(array)
 
 Get last element of array
 
@@ -227,7 +213,7 @@ Output:
 hawaii
 ~~~
 
-### newline_to_br
+## newline_to_br
 
 Inserts a `<br />` linebreak tag in front of every `\n` linebreak character.
 
@@ -241,7 +227,7 @@ Output:
 String<br />\n with <br />\n new <br />\n lines
 ~~~
 
-### replace(input, substring, replacement)
+## replace(input, substring, replacement)
 
 Will replace all occurrences of a string with another.
 
@@ -255,7 +241,7 @@ Output:
 Bahamas are awesome! and Warsaw is awesome!
 ~~~
 
-### replace_first(input, substring, replacement)
+## replace_first(input, substring, replacement)
 
 Will replace the first occurrence of a string with another.
 
@@ -269,7 +255,7 @@ Output:
 Bahamas are awesome! and Warsaw is boring
 ~~~
 
-### remove(input, substring)
+## remove(input, substring)
 
 Removes all occurrences of the substring from the input.
 
@@ -283,7 +269,7 @@ Output:
 Bahamas are and Warsaw is
 ~~~
 
-### remove_first(input, substring)
+## remove_first(input, substring)
 
 Removes first occurrence of the substring from the input.
 
@@ -297,7 +283,7 @@ Output:
 Bahamas are and Warsaw is boring
 ~~~
 
-### plus(input, operand)
+## plus(input, operand)
 
 Gets the result of adding input to operand. When strings are passed, it parses strings as integers before adding.
 
@@ -311,7 +297,7 @@ Output:
 Showing 20-100 rentals
 ~~~
 
-### minus(input, operand)
+## minus(input, operand)
 
 Gets the result of subtracting input from operand. When strings are passed, it parses strings as integers before adding.
 

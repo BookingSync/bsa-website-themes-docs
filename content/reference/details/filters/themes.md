@@ -2,21 +2,8 @@
 1. TOC
 {:toc}
 
-## Overview
 
-Filters are used to manipulate output from tags. Filter operator is `|` and using that filters can be chained like:
-
-~~~django
-{{ rental.name | strip_html | truncate: 40 }}
-~~~
-
-Above example will remove HTML tags in input `rental.name` string and will truncate result to 40 characters. 
-
-## Themes filters
-
-BookingSync Liquid filters
-
-### `t` filter
+## t(string)
 
 Use translation in template
 
@@ -28,4 +15,28 @@ Output (depending on language settings):
 
 ~~~django
 Villas & Aparments
+~~~
+
+## category_photo_url(photo, size = 'normal')
+
+Dispaly category photo in wanted size.  
+
+~~~django
+{{ category.photos.first | category_photo_url: 'normal' }}
+~~~
+
+## money(amount, currency)
+
+Add currency sign to price value.
+
+~~~django
+{{ search.min_price | money: search.currency }}
+~~~
+
+## rental_photo_url(photo, size = 'normal')
+
+Display rental photo in wanted size.
+
+~~~django
+{{ photo | rental_photo_url: 'thumb' }}
 ~~~
