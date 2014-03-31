@@ -15,9 +15,35 @@
         <div class="list-group">
           <%= link_to_with_current("Liquid markup", "/reference/details/liquid_markup/", class: "list-group-item") %>
           <%= link_to_with_current("Global variables", "/reference/details/global_variables/", class: "list-group-item") %>
-          <%= link_to_with_current("Templates", "/reference/details/templates/", class: "list-group-item") %>
-          <%= link_to_with_current("Snippets", "/reference/details/snippets/", class: "list-group-item") %>
-          <%= link_to_with_current("Filters", "/reference/details/filters/", class: "list-group-item") %>
+        </div>
+        <div class="panel-heading">
+          <h3 class="panel-title">Templates</h3>
+        </div>
+        <div class="list-group">
+          <%= link_to_with_current("index.liquid", "/reference/details/templates/_index/", class: "list-group-item") %>
+          <%= link_to_with_current("page.liquid", "/reference/details/templates/page/", class: "list-group-item") %>
+          <%= link_to_with_current("search.liquid", "/reference/details/templates/search/", class: "list-group-item") %>
+          <%= link_to_with_current("info_window.liquid", "/reference/details/templates/info_window/", class: "list-group-item") %>
+          <%= link_to_with_current("404.liquid", "/reference/details/templates/404/", class: "list-group-item") %>
+        </div>
+        <div class="panel-heading">
+          <h3 class="panel-title">Snippets</h3>
+        </div>
+        <div class="list-group">
+          <%= link_to_with_current("home_categories.liquid", "/reference/details/snippets/home_categories/", class: "list-group-item") %>
+          <%= link_to_with_current("home_slider.liquid", "/reference/details/snippets/home_slider/", class: "list-group-item") %>
+          <%= link_to_with_current("no_rentals.liquid", "/reference/details/snippets/no_rentals/", class: "list-group-item") %>
+          <%= link_to_with_current("rental_preview.liquid", "/reference/details/snippets/rental_preview/", class: "list-group-item") %>
+          <%= link_to_with_current("rental_price.liquid", "/reference/details/snippets/rental_price/", class: "list-group-item") %>
+          <%= link_to_with_current("search_bar.liquid", "/reference/details/snippets/search_bar/", class: "list-group-item") %>
+
+        </div>
+        <div class="panel-heading">
+          <h3 class="panel-title">Filters</h3>
+        </div>
+        <div class="list-group">
+          <%= link_to_with_current("Themes filters", "/reference/details/filters/themes/", class: "list-group-item") %>
+          <%= link_to_with_current("Liquid filters", "/reference/details/filters/liquid/", class: "list-group-item") %>
         </div>
       </div>
     </div>
