@@ -140,7 +140,7 @@ Render URL to display search results as map.
 ### `rentals`
 
 An array of rentals returned by search action.
-Each array element is `rental` variable.
+Each array element is [rental variable](/reference/variables/rental/).
 
 ~~~django
 {% for rental in search.rentals %}
@@ -151,7 +151,7 @@ Each array element is `rental` variable.
 ### `destinations`
 
 An array of selected destinations in search form.
-Each array element is a `destination` variable.
+Each array element is a [destination variable](/reference/variables/destination/).
 If none selected returns empty array.
 
 ~~~django
@@ -179,7 +179,7 @@ Checkout date.
 ### `guests`
 
 Array of number of guests field in search form.
-Each element is a `guest` variable.
+Each element is a [guest variable](/reference/variables/guest/).
 
 ~~~django
 {% for guest in search.guests %}
@@ -230,7 +230,7 @@ Current currency.
 ### `rental_types`
 
 Array of selected rental types.
-Each element is a `rental_type` variable.
+Each element is a [rentals type variable](/reference/variables/rental_type/).
 If none selected returns empty array.
 
 ~~~django
@@ -242,7 +242,7 @@ If none selected returns empty array.
 ### `amenities`
 
 Array of selected amenities.
-Each element is a `amenity` variable.
+Each element is a [amenity variable](/reference/variables/amenity/).
 If none selected returns empty array.
 
 ~~~django
